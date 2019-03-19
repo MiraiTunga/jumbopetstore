@@ -3,14 +3,20 @@
 
 #App is live here https://jumbopetstore.herokuapp.com
 
+#Usage
+
+#####Endpointd need to prefixed by (/api) https://jumbopetstore.herokuapp.com/api
+
+* e.g https://jumbopetstore.herokuapp.com/api/pet/findByStatus?status=pending
+* e.g https://jumbopetstore.herokuapp.com/api/pet/{petID}
+* "application/json" header required for all requests 
+
 ## Running Locally
 Make sure you have [Go](http://golang.org/doc/install) 
 
 A .env file must be added to the root name ".env" , they is an .env-example file that can be used as a reference 
 
-##Usage
 
-"application/json" header required for requests 
 
 ## Notes
 
