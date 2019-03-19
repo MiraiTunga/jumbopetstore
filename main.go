@@ -5,13 +5,12 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
-	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"
 	_ "github.com/joho/godotenv/autoload"
+	"jumbopetstore/handlers"
 	"net/http"
 	"os"
-	"petstore/handlers"
 	"strings"
 )
 
@@ -33,7 +32,6 @@ func main() {
 
 	router := gin.New()
 	router.Use(gin.Logger())
-	router.Use(gzip.Gzip(gzip.DefaultCompression))
 	router.Use(middlewareHeadersByRequestURI())
 	router.LoadHTMLGlob("static/*.html")
 	router.Static("static", "static")

@@ -9,9 +9,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/nu7hatch/gouuid"
 	"io"
+	"jumbopetstore/models"
 	"net/http"
 	"os"
-	"petstore/models"
 	"strconv"
 	"strings"
 )
