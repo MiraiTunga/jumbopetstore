@@ -1,6 +1,8 @@
 
 # Jumbo petstore Test
 
+#App is live here https://jumbopetstore.herokuapp.com
+
 ## Running Locally
 Make sure you have [Go](http://golang.org/doc/install) 
 

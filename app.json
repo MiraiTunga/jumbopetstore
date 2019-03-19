@@ -1,12 +1,10 @@
 {
-  "name": "chiitiko",
-  "description": "chiitiko",
+  "name": "jumbopetstore",
+  "description": "jumbopetstore\"",
   "keywords": [
-    "chiitiko",
+    "jumbopetstore\"",
     "go",
-    "sample",
-    "example"
   ],
-  "website": "http://chiitiko.herokuapp.com",
+  "website": "https://jumbopetstore.herokuapp.com",
   "repository": ""
 }
