@@ -207,6 +207,12 @@ func findPetByStatus(svc *dynamodb.DynamoDB, c *gin.Context) {
 		return
 	}
 
+	if len(result.Items) < 1 {
+		res := models.ApiResponse{1, "error", "Pet not found"}
+		c.JSON(http.StatusNotFound, res)
+		return
+	}
+
 	unmarshallingErr := dynamodbattribute.UnmarshalListOfMaps(result.Items, &pets)
 
 	if unmarshallingErr != nil {
